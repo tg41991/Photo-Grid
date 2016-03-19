@@ -1,0 +1,20 @@
+html {
+	font-size: 16px;
+}
+
+body, input {
+	color: #ffffff;
+	background-color: black;
+	font-family: 'Open Sans';
+	font-size: 1.1rem;
+}
+
+.screen-reader {
+	border: 0;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

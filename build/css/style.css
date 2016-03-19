@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-Bold-webfont.eot");
+  src: url("../../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-BoldItalic-webfont.eot");
+  src: url("../../fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../../fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-Light-webfont.eot");
+  src: url("../../fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-LightItalic-webfont.eot");
+  src: url("../../fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-LightItalic-webfont.woff") format("woff"), url("../../fonts/OpenSans-LightItalic-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-LightItalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+html {
+  font-size: 16px; }
+
+body, input {
+  color: #ffffff;
+  background-color: black;
+  font-family: 'Open Sans';
+  font-size: 1.1rem; }
+
+.screen-reader {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*===Search===*/
+.header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.6em;
+  height: 85vh; }
+
+.logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.logo img {
+  max-width: 300px; }
+
+.search-field {
+  border-bottom: .9px solid white;
+  padding-bottom: .2rem;
+  min-width: 250px; }
+
+.search-bar {
+  text-align: center; }
+
+label {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-right: .3rem; }
+
+#search {
+  background-color: inherit;
+  border: 0;
+  color: white; }
+
+#search:hover {
+  color: #e2231a;
+  cursor: pointer; }
+
+input, textarea {
+  border: 0px;
+  min-width: 200px; }
+
+input:focus, textarea:focus {
+  border: 0px;
+  outline: none;
+  background-color: inherit;
+  color: white; }
+
+/*===Footer===*/
+.footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 1.6em 0 1.6em;
+  height: 60px; }
+
+.copyright p {
+  color: #c2c2c2;
+  font-size: .9rem; }
+
+/*===Tablet===*/
+@media only screen and (min-width: 600px) {
+  .logo img {
+    max-width: 250px; }
+  .header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+/*===Desktop===*/
+@media only screen and (min-width: 1000px) {
+  .logo img {
+    max-width: 300px; }
+  .header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
